@@ -4,23 +4,41 @@ body{
 }
 
 header{
+    position: absolute;
+    top: 0; left: 0;
     color: white;
+    width: 95%;
     background-color: #4f0e1a; /* #2b1015; /* #3a1018; */
-    justify-content: left; /* space-around; */
-    padding: 0 2em ;
+    /* justify-content: left; /* space-around; */ 
+    padding: 0 2em;
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+.staybar{
+    position: absolute;
+    top: 0; left: 0;
+    width: 95vw;
+    top-margin: -3px;
+    background-color: #4f0e1a;
+    /* background-size: cover; */
+    padding: 0 2em;
     display: flex; 
     flex-direction: row;
     justify-content: space-between;
-    margin-left:-8px;
-    margin-right:-8px;
-    margin-top:-12px
+    position: fixed;
+    height: 5em;
+    /*justify-content: right; */
 }
 
-
-header a{
+nav a{
     color: white;
     text-decoration: none;
 }
+
 
 header ul{
     list-style-type: none;
@@ -28,6 +46,7 @@ header ul{
     flex-direction: row;
     gap: 2em;
 }
+
 	 
 
 footer{
@@ -48,6 +67,7 @@ section{
     padding: 0.3em 2em;
     margin: 1em;
     margin-top: 3em;
+    scroll-margin-top: 7em;
     /*width: 70%;*/
 }
 
@@ -68,9 +88,18 @@ section p{
 
 .columns{
     display: flex;
-    padding-right: -1em;
-    padding-left: 1em;
+    /*padding-right: 1em;
+    padding-left: 1em;*/
+    margin-top: 8em;
 }
+
+
+.noside{
+    display: flex;
+    flex-direction: column;
+    /* width: 70%; */
+}
+
 
 .side{
     display: flex;
